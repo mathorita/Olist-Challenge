@@ -33,40 +33,24 @@ This project is a solution to the [Olist technical challenge](https://github.com
 ## 🧾 How to Run the Project
 
 1. Clone the repository:
-```bash
 git clone https://github.com/mathorita/Olist-Challenge.git
 cd Olist-Challenge
 Create and activate a virtual environment:
-
-bash
-Copy
-Edit
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 Install the dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 Apply migrations:
-
-bash
-Copy
-Edit
 python manage.py migrate
+
 Import authors from CSV:
-
-bash
-Copy
-Edit
 python manage.py import_authors authors.csv
-Run the server:
 
-bash
-Copy
-Edit
+Run the server:
 python manage.py runserver
+
 🔗 Available Endpoints
 Authors
 GET /author/ → paginated list
